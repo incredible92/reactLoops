@@ -1,0 +1,104 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 23px;
+  background-color: #9932cc;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.container {
+  background-color: white;
+  width: 70vw;
+  height: 35vh;
+  margin: 0 auto;
+  margin-top: 7rem;
+  border-radius: 7px;
+}
+
+.container {
+  display: flex;
+}
+
+.wrapper-1 {
+  margin: 1rem;
+  padding-top: 1rem;
+  width: 50vw;
+}
+
+.content {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.one {
+  background-color: #1e90ff;
+  color: white;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+}
+
+.two {
+  background-color: lightgrey;
+  color: white;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+}
+
+.three {
+  background-color: lightgrey;
+  color: white;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+}
+
+.wrapper-2 {
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  width: 50vw;
+}
+
+.submission {
+  display: flex;
+  margin-right: 12rem;
+  padding-top: 0.7rem;
+}
+
+/* .back {
+  margin-right: 1rem;
+  background-color: lightgray;
+  width: 4rem;
+  height: 2.5rem;
+  text-align: center;
+  padding-top: 1rem;
+} */
+
+.submit {
+  background-color: lightgrey;
+  width: 10rem;
+  height: 2.5rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.title {
+  padding-left: 1rem;
+}
+
+.description {
+  padding-left: 1rem;
+  color: lightgrey;
+}
+
+.data {
+  padding-left: 1rem;
+  color: lightgrey;
+}

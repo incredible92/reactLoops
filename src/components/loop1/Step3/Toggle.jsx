@@ -3,7 +3,8 @@ import React, { useState } from 'react'
 import './Toggle.scss'
 
  function Toggle() {
-    const[Toggle, setToggle] = useState(0)
+    const[Toggle, setToggle] = useState(false)
+    
     const triggerSwitch = () => {
         setToggle( !Toggle )
     }
