@@ -1,28 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import './Toggle.scss'
 
  function Toggle() {
-
-    const ToggleChange = e => {
-        console.log(e);
-      }
+    const[Toggle, setToggle] = useState(0)
+    const triggerSwitch = () => {
+        setToggle( !Toggle )
+    }
+   
     return (
         <div className="switch-box">
-                 <div class="box-1 green" onClick={e => ToggleChange(e)}>
-                <div class="box-2 toggle"></div>
+                <div 
+                onChange={triggerSwitch}
+                className={`box-1 green ${Toggle ? 'wrg-toggle--checked' : ''}`} >
+                    <div className="box-2 toggle"></div>
                 </div>
-                <div class="box-1">
+                <div className="box-1">
                     <div class="box-2"></div>
                 </div>
-                <div class="box-1 green">
-                    <div class="box-2"></div>
+                <div className="box-1 green">
+                    <div className="box-2"></div>
                 </div>
-                <div class="box-1">
-                    <div class="box-2"></div>
+                <div className="box-1">
+                    <div className="box-2"></div>
                 </div>
-                <div class="box-1 green">
-                    <div class="box-2"></div>
+                <div className="box-1 green">
+                    <div className="box-2"></div>
                 </div>
             
         </div>
