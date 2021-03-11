@@ -20,10 +20,10 @@ function Contents() {
 
     return(
      <div>
-      <div className="wrapper">
+      <div className="wrap">
         <form className="form-content" onSubmit={handleChange}>
             <input type="number" name="content"  placeholder="Enter tab index" />
-            <button className="button">Change tab</button>
+            <button className="btn">Change tab</button>
         </form>
        
         <div className="contents">

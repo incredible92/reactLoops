@@ -13,31 +13,32 @@ body {
   text-align: center;
 }
 
-.wrapper {
-  padding: 2rem;
+.wrap {
+  padding: 1.5rem;
   margin: 7rem auto;
   text-align: center;
   justify-content: center;
-  width: 35vw;
-  height: 32vh;
+  width: 39vw;
+  height: 42vh;
   border-radius: 7px;
   background-color: white;
 }
 
 .form-content {
-  margin-top: 1.4rem;
   display: flex;
   height: 10vh;
 }
 
-.button {
-  width: 12vw;
+.btn {
+  background: #dedede;
+  width: 20vw;
   height: 10vh;
 }
 
 
  
  .form-content input {
+   width: 30vw;
   border: none;
   outline: none;
   font-size: 1.5rem;
