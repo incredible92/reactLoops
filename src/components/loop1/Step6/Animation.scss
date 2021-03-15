@@ -16,8 +16,10 @@
     position: absolute;
     left:6rem;
     margin-top: 5rem;
+    cursor:pointer;
     width: 30vw;
     height: 60vh;
     background-color: whitesmoke;
     border-radius: 7px;
+    transition: transform 0.5s;
 }
