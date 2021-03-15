@@ -13,36 +13,40 @@ function Design() {
 
 
      useEffect(() => {
-         let currentContent = contents[setLetterIndex]
-         let cLP= 1;  // cLP means currentLetterPosition
+         let currentContent = contents[letterIndex]
+         console.log('re-rendering');
+         let cLP = 1;  // cLP means currentLetterPosition
 
          const interval = setInterval(() => {
             if (cLP > currentContent.length) {
-              setTimeout(() => {
                 setLetter("");
-                cLP = 1
-                setLetterIndex(letterIndex + 1)
-              }, 1000)
-            } else {
-              setLetter(currentContent.substr(0, cLP));
-      
-              if (currentContent.trim() === "stop") {
-                setLetterIndex(0)
-              } else {
-                cLP++
-              }
+                const checkIndex = letterIndex===3? 0 : letterIndex + 1
+                setLetterIndex(checkIndex)
+        
+            } 
+            else {      
+            //   if (currentContent.trim() === "stop") {
+            //     setLetterIndex(0)
+            //   } else {
+                  cLP++
+                  setLetter(currentContent.substr(0, cLP));
+                  
+            //   }
             }
           }, 300);
          return () => {
             clearInterval(interval);
          }
-     }, [setLetterIndex])
+     }, [letterIndex])
 
 
     return (
         <div className="bgWrap">
-            <h1 className="content">We can help you with {letter}</h1>
+
+            <h1 className="content">We can help you with {letter}
             <span className="cursor" />
+            </h1>
+           
         </div>
     )
 }
