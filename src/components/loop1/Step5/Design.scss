@@ -1,0 +1,37 @@
+html body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  background-color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.bgWrap {
+  background-color: #ffe4b5;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  width: 80%;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-align: center;
+  padding-top: 10rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.cursor {
+    border-left: .1em solid black;
+    animation: blink .7s steps(1) infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
