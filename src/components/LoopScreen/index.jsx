@@ -16,6 +16,8 @@ const Folders = () => {
         <Link to="/loop1-Step6">Loop1_Step6</Link>
         <Link to="/loop1-Step7">Loop1_Step7</Link>
         <Link to="/loop1-Step8">Loop1_Step8</Link>
+        <Link to="/loop1-Step9">Loop1_Step9</Link>
+        <Link to="/loop1-Step10">Loop1_Step10</Link>
       </div>
     </div>
   )

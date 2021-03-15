@@ -1,0 +1,23 @@
+.bg6 {
+    background: black;
+    height: 100vh;
+    width: 100%;
+}
+
+.aniwrap {
+    width: 45vw;
+    height: 100vh;
+    margin: 2px auto;
+    background-color: #6A5ACD;
+    position: relative;
+}
+
+.main-content {
+    position: absolute;
+    left:6rem;
+    margin-top: 5rem;
+    width: 30vw;
+    height: 60vh;
+    background-color: whitesmoke;
+    border-radius: 7px;
+}
