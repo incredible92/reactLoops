@@ -1,0 +1,22 @@
+.bg7 {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+
+.scrollWrap {
+    position: relative;
+    width: 60vw;
+    height: 100vh;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.scrollElement {
+    position: absolute;
+    width: 30vw;
+    height: 35vh;
+    left: 12rem;
+    margin-top: 2rem ;
+    background-color: lightgray;
+}

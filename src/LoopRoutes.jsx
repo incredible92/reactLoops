@@ -7,6 +7,7 @@ import Toggle from './components/loop1/Step3/Toggle'
 import Data from './components/loop1/Step4/Data'
 import Design from './components/loop1/Step5/Design'
 import Animation from './components/loop1/Step6/Animation'
+import Scroll from './components/loop1/Step7/Scroll'
 
 export default  () => (
     <Switch>
@@ -17,5 +18,6 @@ export default  () => (
       <Route path="/loop1-step4" component={Data} />
       <Route path="/loop1-step5" component={Design} />
       <Route path="/loop1-step6" component={Animation} />
+      <Route path="/loop1-step7" component={Scroll} />
     </Switch>
   )
