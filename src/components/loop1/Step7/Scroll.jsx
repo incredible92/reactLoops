@@ -12,13 +12,14 @@ function Scroll() {
   }, [myRef.current]);
   return (
     <div className="bg7">
-      <div className="scrollWrap" ref={myRef}>
+      <div className="scrollWrap">
         {Array(4)
-          .fill("")
+          .fill(" ")
           .map((element, elementIndex) => (
             <span
               key={`element-scroll_${elementIndex}`}
               className="scrollElement"
+              ref={myRef}
             />
           ))}
 
