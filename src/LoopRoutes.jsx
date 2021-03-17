@@ -8,6 +8,7 @@ import Data from './components/loop1/Step4/Data'
 import Design from './components/loop1/Step5/Design'
 import Animation from './components/loop1/Step6/Animation'
 import Scroll from './components/loop1/Step7/Scroll'
+import Search from './components/loop1/Step8/Search'
 
 export default  () => (
     <Switch>
@@ -19,5 +20,6 @@ export default  () => (
       <Route path="/loop1-step5" component={Design} />
       <Route path="/loop1-step6" component={Animation} />
       <Route path="/loop1-step7" component={Scroll} />
+      <Route path="/loop1-step8" component={Search} />
     </Switch>
   )
