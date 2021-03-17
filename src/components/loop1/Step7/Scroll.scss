@@ -5,6 +5,10 @@
 }
 
 .scrollWrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
     position: relative;
     width: 60vw;
     height: 100vh;
@@ -20,3 +24,5 @@
     margin-top: 2rem ;
     background-color: lightgray;
 }
+
+
