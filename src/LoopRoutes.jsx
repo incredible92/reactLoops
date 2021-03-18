@@ -9,6 +9,7 @@ import Design from './components/loop1/Step5/Design'
 import Animation from './components/loop1/Step6/Animation'
 import Scroll from './components/loop1/Step7/Scroll'
 import Search from './components/loop1/Step8/Search'
+import ElementMoves from './components/loop1/Step9/ElementMoves'
 
 export default  () => (
     <Switch>
@@ -21,5 +22,6 @@ export default  () => (
       <Route path="/loop1-step6" component={Animation} />
       <Route path="/loop1-step7" component={Scroll} />
       <Route path="/loop1-step8" component={Search} />
+      <Route path="/loop1-step9" component={ElementMoves} />
     </Switch>
   )

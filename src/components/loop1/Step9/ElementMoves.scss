@@ -1,0 +1,36 @@
+.bg9 {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.bg-box {
+    width: 95%;
+    height: 100vh;
+    background-color: white;
+    margin-left: 2rem;
+}
+
+.elementWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whiteEle {
+    width: 20vw;
+    height: 25vh;
+    // margin-top: 2rem;
+    margin-right: 2rem;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.grayEle {
+    width: 65vh;
+    height: 100vh;
+    background-color:lightgray;
+    border: 5px;
+}
