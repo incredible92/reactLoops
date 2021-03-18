@@ -8,7 +8,7 @@
 .bg-box {
     width: 95%;
     height: 100vh;
-    background-color: white;
+    background-color: whitesmoke;
     margin-left: 2rem;
 }
 
@@ -19,11 +19,12 @@
 }
 
 .whiteEle {
-    width: 20vw;
+    width: 15vw;
     height: 25vh;
     // margin-top: 2rem;
     margin-right: 2rem;
     background-color: white;
+    box-shadow: 1px  grey;
     border-radius: 5px;
     border: 1px solid lightgray;
 }
@@ -31,6 +32,6 @@
 .grayEle {
     width: 65vh;
     height: 100vh;
-    background-color:lightgray;
+    background-color:lightgrey;
     border: 5px;
 }
