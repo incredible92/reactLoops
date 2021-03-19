@@ -12,7 +12,7 @@ import Search from './components/loop1/Step8/Search'
 import ElementMoves from './components/loop1/Step9/ElementMoves'
 import Drag from './components/loop1/Step10/Drag'
 
-export default  () => (
+const LoopRoutes =  () => (
     <Switch>
       <Route path="/" exact component={Folders} />
       <Route path="/loop1-step1" component={Sort} />
@@ -27,3 +27,5 @@ export default  () => (
       <Route path="/loop1-step10" component={Drag} />
     </Switch>
   )
+
+  export default LoopRoutes

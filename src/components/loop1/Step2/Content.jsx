@@ -19,7 +19,8 @@ function Contents() {
     }
 
     return(
-     <div>
+     <div className="bg2">
+         <div className="content-bg">
       <div className="wrap">
         <form className="form-content" onSubmit={handleChange}>
             <input type="number" name="content"  placeholder="Enter tab index" />
@@ -47,6 +48,7 @@ function Contents() {
                  {currentChange} content
             </span>
                 
+      </div>
       </div>
     </div>
     )
