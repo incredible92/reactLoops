@@ -1,0 +1,24 @@
+.bg10 {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+.dragWrap {
+    position: relative;
+    height: 100vh;
+    width: 90%;
+    margin-left: 4rem;
+    background-color: rgb(92, 91, 91);
+}
+
+.dragElement {
+    position: absolute;
+    width: 17vw;
+    height: 30vh;
+    cursor: cell;
+    border-radius: 5px;
+    background-color: white;
+    top: 5rem;
+    margin-left: 2rem;
+}
