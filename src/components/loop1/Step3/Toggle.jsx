@@ -1,35 +1,31 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
-import './Toggle.scss'
+import "./Toggle.scss";
 
- function Toggle() {
-    const[Toggle, setToggle] = useState(false)
+function Toggle() {
+  const [ToggleSwitch, setToggleSwitch] = useState(Array(5).fill(false));
+
+  const triggerSwitch = (index) => {
     
-    const triggerSwitch = () => {
-        setToggle( !Toggle )
-    }
-   
-    return (
-        <div className="switch-box">
-                <div 
-                onChange={triggerSwitch}
-                className={`box-1 green ${Toggle ? 'wrg-toggle--checked' : ''}`} >
-                    <div className="box-2 toggle"></div>
-                </div>
-                <div className="box-1">
-                    <div class="box-2"></div>
-                </div>
-                <div className="box-1 green">
-                    <div className="box-2"></div>
-                </div>
-                <div className="box-1">
-                    <div className="box-2"></div>
-                </div>
-                <div className="box-1 green">
-                    <div className="box-2"></div>
-                </div>
-            
-        </div>
+    setToggleSwitch(
+       
+        ToggleSwitch.map((toggle, toggleIndex) => {
+          if (index === toggleIndex) {
+            return (toggle = !toggle);
+          }
+          return Boolean(Math.round(Math.random() * 1))
+      })
     )
+  }
+
+  
+
+  return (
+    <div className="bg3">
+      <div className="toggle-bg">
+        <div className="toggleBox"></div>
+      </div>
+    </div>
+  );
 }
-export default Toggle
+export default Toggle;

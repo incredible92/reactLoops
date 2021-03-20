@@ -1,40 +1,23 @@
-* {
-    box-sizing: border-box;
-  }
+.bg3 {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
 
-.switch-box {
-    padding: .5rem;
-height: 75vh;
-width: 25vw;
-background-color: white;
-margin: 4rem auto;
-border-radius: 7px;
+}
+.toggle-bg {
+  position: relative; 
+  height: 100vh;
+  width: 80%;
+  margin-left: 7rem;
+  background-color: #6495ED;
 }
 
-.box-1 {
-    
-    outline: none;
-    width: 8vw;
-    height: 8vh;
-    margin: 1.5rem auto 2.5rem;
-    display: flex;
-    border-radius: 26px;
-    background-color: lightgray;
-  }
-  
-  .box-2 {
-    padding: 1rem;
-    border-radius: 50%;
-    border: 1px solid lightgray;
-    outline: none;
-    width: 50%;
-    height: 100%;
-    background-color: white;
-  }
-  
-  .green {
-    background-color: green;
-    justify-content: flex-end;
-    -webkit-transition: 8s;
-    transition: 8s;
-  }
+.toggleBox {
+width: 25vw;
+height: 70vh;
+top: 6rem;
+left: 25rem;
+background-color: white;
+border-radius: 5px;
+position:absolute;
+}
