@@ -23,7 +23,15 @@ function Toggle() {
   return (
     <div className="bg3">
       <div className="toggle-bg">
-        <div className="toggleBox"></div>
+        <div className="toggleBox">
+        {toggleSwitch.map((toggle, index) => (
+          <div
+            onClick={() => setToggleSwitch(index)}
+            key={`toggle_switch_${index}`}
+            className={`toggle ${toggle ? "active" : ""}`}
+          />
+        ))}
+        </div>
       </div>
     </div>
   );
