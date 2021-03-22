@@ -17,7 +17,40 @@ width: 25vw;
 height: 70vh;
 top: 6rem;
 left: 25rem;
+padding: 3rem;
 background-color: white;
 border-radius: 5px;
 position:absolute;
+}
+
+.toggle {
+  left: 5rem;
+  margin-top: 1rem;
+  width: 5rem;
+  height: 3rem;
+  border-radius: 3rem;
+  background: #f1f1f1;
+  position: relative;
+}
+
+.toggle:before {
+  content: '';
+  height: 100%;
+  width: 3rem;
+  background: white;
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  top: -0.05rem;
+  left: 0;
+  transition: left ease-in-out 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.toggle.active {
+  background: #2dcc71;
+}
+.toggle.active:before {
+  left: 50%;
 }

@@ -24,9 +24,9 @@ function Toggle() {
     <div className="bg3">
       <div className="toggle-bg">
         <div className="toggleBox">
-        {toggleSwitch.map((toggle, index) => (
+        {ToggleSwitch.map((toggle, index) => (
           <div
-            onClick={() => setToggleSwitch(index)}
+            onClick={() => triggerSwitch(index)}
             key={`toggle_switch_${index}`}
             className={`toggle ${toggle ? "active" : ""}`}
           />
