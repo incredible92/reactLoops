@@ -31,20 +31,20 @@ function Data() {
         </div>
         <div className="steps-contents">
           {nextIndex === 0 && (
-            <div>
+            <div className="title">
               <p className="instruction">Choose title content</p>
-              <button onClick={next}>Submit title</button>
+              <button className="submit" onClick={next}>Submit title</button>
             </div>
           )}
           {nextIndex === 1 && (
-            <div>
+            <div className="title">
               <p className="instruction">Choose description content</p>
               <button onClick={previous}>Back</button>
               <button onClick={next}>Submit description</button>
             </div>
           )}
           {nextIndex === 2 && (
-            <div>
+            <div className="title">
               <p className="instruction">Are you happy now?</p>
               <button onClick={previous}>No, Go back</button>
               <button>Yes, Go ahead</button>
